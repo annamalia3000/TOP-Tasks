@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.tasks-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    position: relative;
+    width: 200px;
+    max-height: 400px;
+    margin-top: 20px;
+
+    padding: 10px;
+
+    background-image: url('../img/paper.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border: 8px solid rgb(190, 184, 184);
+    border-radius: 20px;
+}
+
+.title {
+    color: black;
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+.input-task-text {
+    width: 97%;
+
+    font-family: "Quicksand";
+    font-size: 12px;
+    color: black;
+}
+
+.task-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: white;
+
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    border: none; 
+    cursor: pointer; 
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+
+.pin-btn {
+    background-image: url('../img/pin.png'); 
+}
+
+
+.unpin-btn {
+    background-image: url('../img/unpin.png'); 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
